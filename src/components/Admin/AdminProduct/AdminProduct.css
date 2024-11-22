@@ -1,0 +1,38 @@
+.product-link {
+    text-decoration: none !important;
+}
+
+.description-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more {
+    display: none;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.description-container.expanded .description {
+    display: block;
+    -webkit-line-clamp: unset;
+}
+
+.description-container.expanded .read-more {
+    display: none;
+}
+
+.description-container .read-more {
+    display: inline;
+}
